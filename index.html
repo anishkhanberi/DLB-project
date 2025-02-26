@@ -20,20 +20,23 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navlogo"><img class="logoimg" src="./Frontend/images/DLB_logo_image-removebg-preview.png" alt="DLB Logo">
-        </div>
-        <ul class="nav-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Why DLB</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Raised Floor</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Sitemap</a></li>
-        </ul>
-        <button class="contactus">Contact Us</button>
-    </nav>
+    <nav> 
+        <a href="index.html" class="logo"><img src="./Frontend/images/DLB_logo_image-removebg-preview.png" alt=""></a>
+                <div class="navbar">
+                    <div class="nav-links" id="navLinks">
+                      <i class='bx bxs-chevron-left' onclick="hideMenu()" ></i>
+                    <ul>
+               <li> <a href="#home" class="active">Home</a></li>
+               <li> <a href="#about">About</a></li>
+               <li> <a href="#services">Facilities</a></li>
+               <li> <a href="#service">Service</a></li>
+               <li> <a href="#sub">School</a></li>
+               </ul>
+                  </div>
+                </div>
+               <i class='bx bx-menu' onclick="showMenu()"></i>
+            </nav>
+        
 
     <!-- Banner section -->
     <section id="billboard">
@@ -48,7 +51,7 @@
 				</div>
 			</div><!--banner-content-->
 			<figure>
-				<img src="./Frontend/images/banner.jpeg" alt="banner" class="banner-image">
+				<img src="./Frontend/images/main-banner.png" alt="banner" class="banner-image">
 			</figure>
 		</div>
 	</section>
@@ -226,7 +229,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 DESIGN BY TECHBRO24 | All Rights Reserved</p>
+            <p>&copy; 2025 DESIGN BY TECHBRO24 | All Rights Reserved</p>
         </div>
     </footer>
 

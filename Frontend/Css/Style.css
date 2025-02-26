@@ -8,7 +8,7 @@
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +23,7 @@
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(212, 160, 83, 0.5);
     animation: fadeInDown 1s ease-out;
+    background-color: #111;
 }
 
 .navlogo img {
@@ -48,7 +49,6 @@
     text-decoration: none;
     color: white;
     font-size: 18px;
-    /* font-weight: bold; */
     transition: color 0.3s;
 }
 
@@ -57,7 +57,7 @@
 }
 
 /* Contact Button */
-.contactus {
+/* .contactus {
     background-color: #C49A6C;
     color: white;
     padding: 12px 20px;
@@ -70,6 +70,98 @@
 .contactus:hover {
     background-color: #A87C50;
     transform: scale(1.1);
+} */ 
+
+nav{
+    display: flex;
+     position: fixed;
+    padding: 2% 6%;
+    top: 0;
+    width: 100%;
+    height: 3.5%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+nav img{
+    width: 60px;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height:3px;
+    background-color:#D4A053;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+
+
+nav .bx{
+    display: none;
+}
+
+@media(max-width:900px){
+    .text-box h1{
+    font-size: 30px;
+  }
+  .txt-box h1{
+    font-size: 22px;
+  }
+   .text-box-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background:#ff994f;
+    height: 55vh;
+    width: 190px;
+    top: 0;
+    right: -220px;
+    text-align: left;
+    z-index: 6;
+    transition: 1s;
+  }
+  nav{
+    height: 8%;
+  }
+  nav .bx{
+    display: block;
+    color:#fff;
+    margin:10px;
+    font-size: 22px;
+    cursor:pointer;
+  }
+  .nav-links ul{
+    padding: 25px;
+
+  }
+
 }
 
 /* Banner section */
